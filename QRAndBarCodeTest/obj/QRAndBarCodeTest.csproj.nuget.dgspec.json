@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+        "projectName": "QRAndBarCodeTest",
+        "projectPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+        "packagesPath": "C:\\Users\\Punto Singular\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Punto Singular\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            },
+            "Zebra.Printer.SDK": {
+              "target": "Package",
+              "version": "[2.15.2634, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
