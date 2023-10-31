@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "BarcodeLib/1.0.0.20": {
+        "type": "package",
+        "compile": {
+          "lib/net20/BarcodeLib.dll": {}
+        },
+        "runtime": {
+          "lib/net20/BarcodeLib.dll": {}
+        }
+      },
       "Csv/1.0.31": {
         "type": "package",
         "dependencies": {
@@ -138,6 +147,28 @@
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -666,6 +697,31 @@
         "compile": {
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
           }
         }
       },
@@ -1839,6 +1895,20 @@
     }
   },
   "libraries": {
+    "BarcodeLib/1.0.0.20": {
+      "sha512": "cAjO6wp05bu/ASdyCGTvDyqA0az7tilcEhLTHSU67ne4Ht0HNz0tPa7A2Jus2dj/djG0tSLmUYOCZKCrYE0Org==",
+      "type": "package",
+      "path": "barcodelib/1.0.0.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "barcodelib.1.0.0.20.nupkg.sha512",
+        "barcodelib.nuspec",
+        "lib/LICENSE",
+        "lib/Release Notes.txt",
+        "lib/net20/BarcodeLib.dll"
+      ]
+    },
     "Csv/1.0.31": {
       "sha512": "3EBPR5/S4GRZog19LI3F/cOKskccG79mjhNLG0WcZcp3IftpJQn0HikgGoCHg5fVuE5wgbgiY6rpAhk10g9A7Q==",
       "type": "package",
@@ -2238,6 +2308,37 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/7.0.0": {
+      "sha512": "2nXPrhdAyAzir0gLl8Yy8S5Mnm/uBSQQA7jEsILOS1MTyS7DbmV1NgViMtvV1sfCD1ebITpNwb1NIinKeJgUVQ==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
       ]
     },
     "MSBuild.Sdk.Extras/1.6.46": {
@@ -3294,6 +3395,43 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tracing.4.3.0.nupkg.sha512",
         "system.diagnostics.tracing.nuspec"
+      ]
+    },
+    "System.Drawing.Common/7.0.0": {
+      "sha512": "KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "type": "package",
+      "path": "system.drawing.common/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.xml",
+        "system.drawing.common.7.0.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
@@ -6298,26 +6436,28 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BarcodeLib >= 1.0.0.20",
       "QRCoder >= 1.4.3",
       "Swashbuckle.AspNetCore >= 6.5.0",
+      "System.Drawing.Common >= 7.0.0",
       "ZXing.Net >= 0.16.9",
       "Zebra.Printer.SDK >= 2.15.2634"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Punto Singular\\.nuget\\packages\\": {}
+    "C:\\Users\\Josea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+      "projectUniqueName": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
       "projectName": "QRAndBarCodeTest",
-      "projectPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
-      "packagesPath": "C:\\Users\\Punto Singular\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\QRAndBarCodeTest\\QRAndBarCodeTest\\obj\\",
+      "projectPath": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+      "packagesPath": "C:\\Users\\Josea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Punto Singular\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Josea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6325,6 +6465,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6343,6 +6484,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "BarcodeLib": {
+            "target": "Package",
+            "version": "[1.0.0.20, )"
+          },
           "QRCoder": {
             "target": "Package",
             "version": "[1.4.3, )"
@@ -6350,6 +6495,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "ZXing.Net": {
             "target": "Package",
@@ -6379,8 +6528,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BarcodeLib 1.0.0.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "BarcodeLib",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -1,7 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using QRAndBarCodeTest.ApplicationServices;
 using QRAndBarCodeTest.Models;
+using System.Net;
+using System;
+using System.Drawing;
+using System.Drawing.Imaging;
+using ZXing;
+using ZXing.Common;
 
 namespace QRAndBarCodeTest.Controllers.QRBARCodes
 {
@@ -28,5 +35,9 @@ namespace QRAndBarCodeTest.Controllers.QRBARCodes
             var contentType = "image/png";
             return File(etiqueta.QRCodeBytes, contentType);
         }
+
+
+
+
     }
 }
