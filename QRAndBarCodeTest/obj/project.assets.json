@@ -6445,19 +6445,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Josea\\.nuget\\packages\\": {}
+    "C:\\Users\\Punto Singular\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+      "projectUniqueName": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
       "projectName": "QRAndBarCodeTest",
-      "projectPath": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
-      "packagesPath": "C:\\Users\\Josea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Josea\\Documents\\github\\TestBarcode\\QRAndBarCodeTest\\obj\\",
+      "projectPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\TestBarcode\\QRAndBarCodeTest\\QRAndBarCodeTest.csproj",
+      "packagesPath": "C:\\Users\\Punto Singular\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Punto Singular\\Documents\\PruebasFuncionalidad\\TestBarcode\\QRAndBarCodeTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Josea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Punto Singular\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6465,7 +6465,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6528,7 +6527,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   },

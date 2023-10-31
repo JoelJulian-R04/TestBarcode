@@ -26,14 +26,12 @@ namespace QRAndBarCodeTest.Controllers.QRBARCodes
         public async Task<IActionResult> GenerarEtiqueta([FromBody] CodeData codeData)
         {
             var etiqueta = await _codeDataService.CreatePrintCode(codeData);
-            /*var result = new
+            var resultPrint = await _codeDataService.SendPrintCode(etiqueta);
+            if (resultPrint != false)
             {
-                QRCodeBytes = Convert.ToBase64String(etiqueta.QRCodeBytes),
-                BarcodeBytes = Convert.ToBase64String(etiqueta.BarcodeBytes)
-            };
-            return Ok(result);*/
-            var contentType = "image/png";
-            return File(etiqueta.QRCodeBytes, contentType);
+                return Ok("Successful");
+            }
+            return BadRequest("Error in the process!.");
         }
 
 
