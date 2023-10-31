@@ -22,6 +22,7 @@ namespace QRAndBarCodeTest.Controllers
                     return BadRequest("The field 'text' is empty");
                 }
 
+
                 Barcode barcode = new Barcode();
                 barcode.IncludeLabel = true;
                 barcode.Alignment = AlignmentPositions.CENTER;
